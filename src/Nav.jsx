@@ -6,6 +6,7 @@ function Nav() {
     const navS = <>
 
         <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/props'>Props</NavLink></li>
 
     </>
 

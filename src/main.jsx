@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './Home';
 import Root from './Root';
+import Props from './home file/Props';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/props",
+        element: <Props></Props>,
       },
     ],
   },

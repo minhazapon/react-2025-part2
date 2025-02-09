@@ -1,6 +1,5 @@
 import { useState } from "react"
 
-
 function Looping() {
 
     const [frutZ, setFrutZ] = useState([])
