@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "image": "https://example.com/images/apple.jpg",
+      "name": "Apple",
+      "details": "A sweet and crunchy fruit rich in fiber and vitamin C."
+    },
+    {
+      "id": 2,
+      "image": "https://example.com/images/banana.jpg",
+      "name": "Banana",
+      "details": "A soft and energy-rich fruit high in potassium and vitamin B6."
+    },
+    {
+      "id": 3,
+      "image": "https://example.com/images/orange.jpg",
+      "name": "Orange",
+      "details": "A juicy citrus fruit packed with vitamin C and antioxidants."
+    },
+    {
+      "id": 4,
+      "image": "https://example.com/images/mango.jpg",
+      "name": "Mango",
+      "details": "A tropical fruit known for its sweet taste and rich vitamin A content."
+    },
+    {
+      "id": 5,
+      "image": "https://example.com/images/grapes.jpg",
+      "name": "Grapes",
+      "details": "Small, juicy berries that can be eaten fresh or used for making wine."
+    },
+    {
+      "id": 6,
+      "image": "https://example.com/images/pineapple.jpg",
+      "name": "Pineapple",
+      "details": "A tropical fruit with a sweet and tangy taste, rich in vitamin C."
+    },
+    {
+      "id": 7,
+      "image": "https://example.com/images/watermelon.jpg",
+      "name": "Watermelon",
+      "details": "A refreshing fruit with high water content, perfect for hydration."
+    },
+    {
+      "id": 8,
+      "image": "https://example.com/images/strawberry.jpg",
+      "name": "Strawberry",
+      "details": "A red, juicy fruit with a sweet taste and high in antioxidants."
+    },
+    {
+      "id": 9,
+      "image": "https://example.com/images/papaya.jpg",
+      "name": "Papaya",
+      "details": "A tropical fruit known for its digestive benefits and rich vitamin C content."
+    },
+    {
+      "id": 10,
+      "image": "https://example.com/images/blueberry.jpg",
+      "name": "Blueberry",
+      "details": "A small, sweet berry loaded with antioxidants and vitamins."
+    }
+  ]
+  
