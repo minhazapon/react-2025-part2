@@ -7,6 +7,7 @@ function Nav() {
 
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/props'>Props</NavLink></li>
+        <li><NavLink to='/jp'>jsx props</NavLink></li>
 
     </>
 

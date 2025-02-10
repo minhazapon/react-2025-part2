@@ -9,6 +9,7 @@ import {
 import Home from './Home';
 import Root from './Root';
 import Props from './home file/Props';
+import JP from './jsx props/JP';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/props",
         element: <Props></Props>,
+      },
+      {
+        path: "/jp",
+        element: <JP></JP>,
       },
     ],
   },
