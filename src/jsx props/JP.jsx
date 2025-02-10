@@ -4,10 +4,8 @@ import ChildrenOfJP from "./ChildrenOfJP"
 function JP() {
 
     const info = {
-
         skills: 'javaScript',
         skill2: 'react.js'
-
     }
 
     return (

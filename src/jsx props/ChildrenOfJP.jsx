@@ -6,7 +6,6 @@ function ChildrenOfJP(props) {
 
     return (
         <>
-
             <div className=" flex justify-center ">
                 <div className=" border-[1px] bg-black text-cyan-500 p-20 rounded-xl mt-40 ">
                     <p>{info.skills}</p>
