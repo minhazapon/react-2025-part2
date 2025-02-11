@@ -1,3 +1,4 @@
+import EventProps from "./EventProps"
 
 
 function Event() {
@@ -15,6 +16,10 @@ function Event() {
                     <p>Title: software developer</p>
                     <button onClick={() => handleContact("minhaz the react expert", "minhazTheReact@gmail.com")} className=" btn mt-5 bg-black  hover:border-purple-400 text-white ">Contact Him</button>
                 </div>
+            </div>
+
+            <div>
+                <EventProps></EventProps>
             </div>
         </div>
     )
