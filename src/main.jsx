@@ -10,6 +10,7 @@ import Home from './Home';
 import Root from './Root';
 import Props from './home file/Props';
 import JP from './jsx props/JP';
+import Event from './event handling/EventHandle';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/jp",
         element: <JP></JP>,
+      },
+      {
+        path: "/event",
+        element: <Event></Event>,
       },
     ],
   },
