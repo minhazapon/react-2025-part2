@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Render from "./StateRender"
 
 function State() {
 
@@ -17,6 +18,9 @@ function State() {
                 <p onClick={() => handleData()} className=" btn ">Increment </p>
                 <p className="  bg-white w-fit pl-5 pr-5 pt-2 pb-2 text-black "> {data} </p>
                 <p onClick={() => handleDataDec()} className=" btn ">Decrement </p>
+            </div>
+            <div className=" flex justify-center ">
+                <Render></Render>
             </div>
         </div>
     )

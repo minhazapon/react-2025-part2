@@ -1,0 +1,65 @@
+
+ [
+      {
+        "id": 1,
+        "image": "https://dokanpat.com.bd/wp-content/uploads/2021/10/unsalted-butter.jpg",
+        "name": "Unsalted Butter",
+        "details": "Pure butter with no added salt, ideal for baking and cooking where precise salt control is needed."
+      },
+      {
+        "id": 2,
+        "image": "https://www.glenstalfoods.com/wordpress/wp-content/uploads/2020/12/0002_Glenstal-saltedbutter-sm.jpg",
+        "name": "Salted Butter",
+        "details": "Contains added salt for enhanced flavor, commonly used for spreading and cooking."
+      },
+      {
+        "id": 3,
+        "image": "hhttps://thomasjosephbutchery.co.uk/cdn/shop/products/berkeley-farm-traditional-organic-farmhouse-butter-430781.jpg?v=1643791231",
+        "name": "Organic Butter",
+        "details": "Made from organic cream sourced from grass-fed cows, free from artificial additives."
+      },
+      {
+        "id": 4,
+        "image": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2FPhoto%2FRecipes%2F2024-09-how-to-make-clarified-butter%2Fhow-to-make-clarified-butter-211",
+        "name": "Clarified Butter",
+        "details": "Butter with milk solids and water removed, used in high-heat cooking and frying."
+      },
+      {
+        "id": 5,
+        "image": "https://www.eatingwell.com/thmb/EY63AWae1w0ru7GZQBhYf5zoug8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-is-ghee-b7d45427a4064055a4b3d920cf6c22a1.jpg",
+        "name": "Ghee",
+        "details": "A type of clarified butter commonly used in Indian and Middle Eastern cuisine, known for its nutty flavor."
+      },
+      {
+        "id": 6,
+        "image": "https://www.internationaldessertsblog.com/wp-content/uploads/2021/03/European-Butter-154.jpg",
+        "name": "European Style Butter",
+        "details": "Contains a higher butterfat percentage (82-85%) for a richer, creamier texture and taste."
+      },
+      {
+        "id": 7,
+        "image": "https://www.thespruceeats.com/thmb/mt8CXljZGqtCMsVVTyOkd1AZ4lU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/homemade-whipped-butter-427820-12-5b3f9b0946e0fb00378c47e6.jpg",
+        "name": "Whipped Butter",
+        "details": "Incorporates air for a lighter, spreadable texture, often used as a table butter."
+      },
+      {
+        "id": 8,
+        "image": "https://fullofplants.com/wp-content/uploads/2017/12/the-best-vegan-cultured-butter-with-coconut-oil-and-cashews-thumb-1.jpg",
+        "name": "Vegan Butter",
+        "details": "A plant-based alternative made from oils such as coconut, avocado, or soybean, used in dairy-free diets."
+      },
+      {
+        "id": 9,
+        "image": "https://makeitdough.com/wp-content/uploads/2023/01/Cultured-Butter-11.jpg",
+        "name": "Cultured Butter",
+        "details": "Made with fermented cream for a tangy, complex flavor, often used in gourmet dishes."
+      },
+      {
+        "id": 10,
+        "image": "https://img.bestrecipes.com.au/0fR4btA_/w643-h428-cfill-q90/br/2018/07/flavoured-butters-recipe-519298-1.jpg",
+        "name": "Flavored Butter",
+        "details": "Butter infused with herbs, spices, or sweeteners, used to enhance various dishes."
+      }
+]
+
+  
