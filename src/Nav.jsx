@@ -9,6 +9,7 @@ function Nav() {
         <li><NavLink to='/props'>Props</NavLink></li>
         <li><NavLink to='/jp'>jsx props</NavLink></li>
         <li><NavLink to='/event'>Event Handle</NavLink></li>
+        <li><NavLink to='/state'>UseState</NavLink></li>
 
     </>
 

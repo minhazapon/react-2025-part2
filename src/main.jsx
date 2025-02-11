@@ -11,6 +11,7 @@ import Root from './Root';
 import Props from './home file/Props';
 import JP from './jsx props/JP';
 import Event from './event handling/EventHandle';
+import State from './useSate/State';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/event",
         element: <Event></Event>,
+      },
+      {
+        path: "/state",
+        element: <State></State>,
       },
     ],
   },
