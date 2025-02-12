@@ -1,11 +1,9 @@
 
 function DisplayValue() {
     return (
-        <div>
-
-
-
-        </div>
+        <>
+            <p className=" text-center ">Here is the value :  </p>
+        </>
     )
 }
 
