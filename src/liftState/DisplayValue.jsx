@@ -1,8 +1,8 @@
 
-function DisplayValue() {
+function DisplayValue({ inputs }) {
     return (
         <>
-            <p className=" text-center ">Here is the value :  </p>
+            <p className=" text-center ">Here is the value : {inputs}  </p>
         </>
     )
 }
