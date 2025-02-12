@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Render from "./StateRender"
+import ObjectState from "./ObjectState"
 
 function State() {
 
@@ -21,6 +22,9 @@ function State() {
             </div>
             <div className=" flex justify-center ">
                 <Render></Render>
+            </div>
+            <div className=" flex justify-center ">
+                <ObjectState></ObjectState>
             </div>
         </div>
     )
