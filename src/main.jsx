@@ -1,11 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import LiftState from './liftState/LiftSate'
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import Home from './Home';
 import Root from './Root';
 import Props from './home file/Props';
@@ -37,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/state",
         element: <State></State>,
+      },
+      {
+        path: "/lift",
+        element: <LiftState></LiftState>,
       },
     ],
   },
