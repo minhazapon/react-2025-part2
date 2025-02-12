@@ -13,27 +13,18 @@ function Render() {
 
     return (
         <>
-
             <div className=" mt-20  ">
-
                 <div>
-                    <p className="text-5xl font-bold text-black text-center ">How UseSate Works</p>
+                    <p className="text-5xl font-bold text-black text-center ">How UseState Works</p>
                 </div>
-
                 <div>
                     <div className=" grid  md:grid-cols-3 gap-6 mt-10 ">
-
                         {
-
                             butter.map(butter => <ButterDetails butter={butter}></ButterDetails>)
-
                         }
-
                     </div>
                 </div>
-
             </div>
-
         </>
     )
 }

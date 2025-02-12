@@ -1,12 +1,10 @@
 
-
 function ButterDetails({ butter }) {
 
     const { id, image, name, details } = butter
 
     return (
         <div>
-
             <div className="card card-compact bg-base-100 w-96 h-[450px] border-[1px]">
                 <figure>
                     <img className=" h-[250px] w-full "
@@ -21,7 +19,6 @@ function ButterDetails({ butter }) {
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }
