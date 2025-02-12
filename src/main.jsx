@@ -10,6 +10,7 @@ import Props from './home file/Props';
 import JP from './jsx props/JP';
 import Event from './event handling/EventHandle';
 import State from './useSate/State';
+import Toggle from './toggle file/Toggle';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/lift",
         element: <LiftState></LiftState>,
+      },
+      {
+        path: "/toggle",
+        element: <Toggle></Toggle>,
       },
     ],
   },

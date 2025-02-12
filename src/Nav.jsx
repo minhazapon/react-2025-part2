@@ -11,6 +11,7 @@ function Nav() {
         <li><NavLink to='/event'>Event Handle</NavLink></li>
         <li><NavLink to='/state'>UseState</NavLink></li>
         <li><NavLink to='/lift'>LiftState</NavLink></li>
+        <li><NavLink to='/toggle'>Toggle</NavLink></li>
 
     </>
 
