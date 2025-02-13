@@ -5,12 +5,21 @@ function Todo() {
 
     const [inputValue, setInputValue] = useState("")
 
+    const [task, setTask] = useState([])
+
     const handleInput = (value) => {
         setInputValue(value)
     }
 
     const handleFormValue = (e) => {
         e.preventDefault()
+        if (!inputValue) return
+        if (task.includes(inputValue)) {
+            setInputValue("")
+            return;
+        }
+        setTask((preTask) => [...preTask, inputValue])
+        setInputValue("")
     }
 
     return (
