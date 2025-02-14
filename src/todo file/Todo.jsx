@@ -40,8 +40,11 @@ function Todo() {
 
     }, [])
 
-    const handleDelete = () => {
-        console.log(task)
+    const handleDelete = (addValue) => {
+
+        const DeleteItems = task.filter((curTask) => curTask !== addValue)
+        setTask(DeleteItems)
+
     }
 
     return (
@@ -78,7 +81,7 @@ function Todo() {
                                         <div className=" flex justify-between items-center gap-20 border-[1px] w-[420px] h-[50px] p-3 rounded-xl ">
                                             <p>{task}</p>
                                             <div className=" flex items-center gap-2  ">
-                                                <button onClick={handleDelete}>
+                                                <button onClick={() => handleDelete(task)}>
                                                     <MdDeleteSweep className="cursor-pointer h-[30px] w-[30px]">
                                                     </MdDeleteSweep>
                                                 </button>
