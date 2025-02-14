@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { MdDeleteSweep } from "react-icons/md";
 import { CiEdit } from "react-icons/ci";
+import Swal from "sweetalert2";
 
 
 function Todo() {
@@ -44,6 +45,17 @@ function Todo() {
 
         const DeleteItems = task.filter((curTask) => curTask !== addValue)
         setTask(DeleteItems)
+
+        if (addValue) {
+
+            Swal.fire({
+                title: 'Delete Done!',
+                text: 'Do you want to continue',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+            })
+
+        }
 
     }
 
