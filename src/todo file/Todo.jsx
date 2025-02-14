@@ -29,6 +29,7 @@ function Todo() {
 
     const now = new Date();
     const formatedDate = now.toLocaleDateString();
+    const formatTime = now.toLocaleTimeString()
 
     return (
         <>
@@ -36,7 +37,7 @@ function Todo() {
                 <div>
                     <div>
                         <p className=" text-5xl font-bold text-cyan-700 text-center ">Todo List</p>
-                        <p className=" text-2xl font-bold text-cyan-700 text-center ">{formatedDate} - Time</p>
+                        <p className=" text-2xl font-bold text-cyan-700 text-center ">{formatedDate} - {formatTime}</p>
                     </div>
                     <div className=" flex justify-center mt-8 ">
                         <form onSubmit={handleFormValue} className=" flex items-center">
