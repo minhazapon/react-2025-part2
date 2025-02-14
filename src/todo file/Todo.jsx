@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { MdDeleteSweep } from "react-icons/md";
 import { CiEdit } from "react-icons/ci";
 
@@ -6,8 +6,8 @@ import { CiEdit } from "react-icons/ci";
 function Todo() {
 
     const [inputValue, setInputValue] = useState("")
-
     const [task, setTask] = useState([])
+    const [date, setDate] = useState("")
 
     const handleInput = (value) => {
         setInputValue(value)
@@ -27,9 +27,18 @@ function Todo() {
         setInputValue("")
     }
 
-    const now = new Date();
-    const formatedDate = now.toLocaleDateString();
-    const formatTime = now.toLocaleTimeString()
+    useEffect(() => {
+
+        const interval = setInterval(() => {
+            const now = new Date();
+            const formatedDate = now.toLocaleDateString();
+            const formatTime = now.toLocaleTimeString()
+            setDate(` ${formatedDate} - ${formatTime} `)
+        }, 1000)
+
+        return () => clearInterval(interval)
+
+    }, [])
 
     return (
         <>
@@ -37,7 +46,7 @@ function Todo() {
                 <div>
                     <div>
                         <p className=" text-5xl font-bold text-cyan-700 text-center ">Todo List</p>
-                        <p className=" text-2xl font-bold text-cyan-700 text-center ">{formatedDate} - {formatTime}</p>
+                        <p className=" text-2xl font-bold text-cyan-700 text-center "> {date} </p>
                     </div>
                     <div className=" flex justify-center mt-8 ">
                         <form onSubmit={handleFormValue} className=" flex items-center">
