@@ -27,12 +27,16 @@ function Todo() {
         setInputValue("")
     }
 
+    const now = new Date();
+    const formatedDate = now.toLocaleDateString();
+
     return (
         <>
             <div className=" m-20 ">
                 <div>
                     <div>
                         <p className=" text-5xl font-bold text-cyan-700 text-center ">Todo List</p>
+                        <p className=" text-2xl font-bold text-cyan-700 text-center ">{formatedDate} - Time</p>
                     </div>
                     <div className=" flex justify-center mt-8 ">
                         <form onSubmit={handleFormValue} className=" flex items-center">
@@ -60,8 +64,8 @@ function Todo() {
                                         <div className=" flex justify-between items-center gap-20 border-[1px] w-[420px] h-[50px] p-3 rounded-xl ">
                                             <p>{task}</p>
                                             <div className=" flex items-center gap-2  ">
-                                                <p > <MdDeleteSweep className=" h-[30px] w-[30px] "></MdDeleteSweep> </p>
-                                                <p > <CiEdit className=" h-[30px] w-[30px] "></CiEdit> </p>
+                                                <p > <MdDeleteSweep className=" cursor-pointer h-[30px] w-[30px] "></MdDeleteSweep> </p>
+                                                <p > <CiEdit className=" cursor-pointer h-[30px] w-[30px] "></CiEdit> </p>
                                             </div>
                                         </div>
                                     </div>
