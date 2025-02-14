@@ -40,6 +40,10 @@ function Todo() {
 
     }, [])
 
+    const handleDelete = () => {
+        console.log(task)
+    }
+
     return (
         <>
             <div className=" m-20 ">
@@ -74,8 +78,14 @@ function Todo() {
                                         <div className=" flex justify-between items-center gap-20 border-[1px] w-[420px] h-[50px] p-3 rounded-xl ">
                                             <p>{task}</p>
                                             <div className=" flex items-center gap-2  ">
-                                                <p > <MdDeleteSweep className=" cursor-pointer h-[30px] w-[30px] "></MdDeleteSweep> </p>
-                                                <p > <CiEdit className=" cursor-pointer h-[30px] w-[30px] "></CiEdit> </p>
+                                                <button onClick={handleDelete}>
+                                                    <MdDeleteSweep className="cursor-pointer h-[30px] w-[30px]">
+                                                    </MdDeleteSweep>
+                                                </button>
+                                                <button>
+                                                    <CiEdit className=" cursor-pointer h-[30px] w-[30px] ">
+                                                    </CiEdit>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -84,7 +94,7 @@ function Todo() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
 
     )
