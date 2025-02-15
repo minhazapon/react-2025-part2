@@ -10,9 +10,8 @@ function Todo() {
     const [task, setTask] = useState([])
     const [date, setDate] = useState("")
 
-
     //local storage work
-
+    localStorage.setItem("todoData", JSON.stringify(task))
     //local storage work
 
     const handleInput = (value) => {
