@@ -4,12 +4,16 @@ import { CiEdit } from "react-icons/ci";
 import Swal from "sweetalert2";
 import { FaCheckDouble } from "react-icons/fa6";
 
-
 function Todo() {
 
     const [inputValue, setInputValue] = useState("")
     const [task, setTask] = useState([])
     const [date, setDate] = useState("")
+
+
+    //local storage work
+
+    //local storage work
 
     const handleInput = (value) => {
         setInputValue(value)
@@ -72,7 +76,9 @@ function Todo() {
                     <div className=" flex justify-center mt-8 ">
                         <form onSubmit={handleFormValue} className=" flex items-center">
                             <div>
-                                <input required className="p-3 h-[50px] border-[1px] w-[200px] md:w-[400px] rounded-l-[20px]"
+                                <input
+                                    required
+                                    className="p-3 h-[50px] border-[1px] w-[200px] md:w-[400px] rounded-l-[20px]"
                                     placeholder="Add Task"
                                     type="text"
                                     name="text"
