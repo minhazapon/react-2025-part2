@@ -54,6 +54,12 @@ function Todo() {
         }
     }
 
+    const handleClearButton = () => {
+
+        setTask([])
+
+    }
+
     return (
         <>
             <div className=" m-20 ">
@@ -104,7 +110,7 @@ function Todo() {
                         </div>
                     </div>
                     <div className=" flex justify-center mt-8 ">
-                        <button className=" btn bg-red-800 text-white ">Clear all</button>
+                        <button onClick={handleClearButton} className=" btn bg-red-800 text-white ">Clear all</button>
                     </div>
                 </div>
             </div >
