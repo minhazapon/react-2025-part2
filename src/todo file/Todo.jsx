@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { MdDeleteSweep } from "react-icons/md";
 import { CiEdit } from "react-icons/ci";
 import Swal from "sweetalert2";
+import { FaCheckDouble } from "react-icons/fa6";
 
 
 function Todo() {
@@ -15,11 +16,8 @@ function Todo() {
     }
 
     const handleFormValue = (e) => {
-
         e.preventDefault()
-
         if (!inputValue) return
-
         if (task.includes(inputValue)) {
             setInputValue("")
             return;
@@ -29,16 +27,13 @@ function Todo() {
     }
 
     useEffect(() => {
-
         const interval = setInterval(() => {
             const now = new Date();
             const formatedDate = now.toLocaleDateString();
             const formatTime = now.toLocaleTimeString()
             setDate(` ${formatedDate} - ${formatTime} `)
         }, 1000)
-
         return () => clearInterval(interval)
-
     }, [])
 
     const handleDelete = (addValue) => {
@@ -55,9 +50,7 @@ function Todo() {
     }
 
     const handleClearButton = () => {
-
         setTask([])
-
     }
 
     return (
@@ -99,8 +92,8 @@ function Todo() {
                                                     </MdDeleteSweep>
                                                 </button>
                                                 <button>
-                                                    <CiEdit className=" cursor-pointer h-[30px] w-[30px] ">
-                                                    </CiEdit>
+                                                    <FaCheckDouble className=" cursor-pointer h-[25px] w-[25px] ">
+                                                    </FaCheckDouble>
                                                 </button>
                                             </div>
                                         </div>
