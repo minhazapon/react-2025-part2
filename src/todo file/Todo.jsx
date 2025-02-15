@@ -107,7 +107,7 @@ function Todo() {
                         </form>
                     </div>
                     <div>
-                        <div>
+                        <div className=" grid  md:grid-cols-3 gap-5 ">
                             {
                                 task.map((task, index) => <div className=" mt-10 " key={index}>
                                     <div className=" flex justify-center ">

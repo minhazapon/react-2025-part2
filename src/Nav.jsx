@@ -1,18 +1,9 @@
 import { NavLink } from "react-router-dom"
 
-
 function Nav() {
 
     const navS = <>
-
         <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/props'>Props</NavLink></li>
-        <li><NavLink to='/jp'>jsx props</NavLink></li>
-        <li><NavLink to='/event'>Event Handle</NavLink></li>
-        <li><NavLink to='/state'>UseState</NavLink></li>
-        <li><NavLink to='/lift'>LiftState</NavLink></li>
-        <li><NavLink to='/toggle'>Toggle</NavLink></li>
-
     </>
 
     return (
