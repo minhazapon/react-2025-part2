@@ -42,21 +42,16 @@ function Todo() {
     }, [])
 
     const handleDelete = (addValue) => {
-
         const DeleteItems = task.filter((curTask) => curTask !== addValue)
         setTask(DeleteItems)
-
         if (addValue) {
-
             Swal.fire({
                 title: 'Delete Done!',
                 text: 'Do you want to continue',
                 icon: 'success',
                 confirmButtonText: 'Cool'
             })
-
         }
-
     }
 
     return (
@@ -107,6 +102,9 @@ function Todo() {
                                 </div>)
                             }
                         </div>
+                    </div>
+                    <div className=" flex justify-center mt-8 ">
+                        <button className=" btn bg-red-800 text-white ">Clear all</button>
                     </div>
                 </div>
             </div >
