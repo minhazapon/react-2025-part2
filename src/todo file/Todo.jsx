@@ -51,6 +51,14 @@ function Todo() {
 
     const handleClearButton = () => {
         setTask([])
+        if (handleClearButton) {
+            Swal.fire({
+                title: 'Clear Done!',
+                text: 'Do you want to continue',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+            })
+        }
     }
 
     return (
@@ -87,14 +95,15 @@ function Todo() {
                                         <div className=" flex justify-between items-center gap-20 border-[1px] w-[420px] h-[50px] p-3 rounded-xl ">
                                             <p>{task}</p>
                                             <div className=" flex items-center gap-2  ">
-                                                <button onClick={() => handleDelete(task)}>
-                                                    <MdDeleteSweep className="cursor-pointer h-[30px] w-[30px]">
-                                                    </MdDeleteSweep>
-                                                </button>
                                                 <button>
                                                     <FaCheckDouble className=" cursor-pointer h-[25px] w-[25px] ">
                                                     </FaCheckDouble>
                                                 </button>
+                                                <button onClick={() => handleDelete(task)}>
+                                                    <MdDeleteSweep className="cursor-pointer h-[30px] w-[30px]">
+                                                    </MdDeleteSweep>
+                                                </button>
+
                                             </div>
                                         </div>
                                     </div>
