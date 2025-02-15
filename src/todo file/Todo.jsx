@@ -13,8 +13,14 @@ function Todo() {
     const [task, setTask] = useState(() => {
 
         const DataOfTodo = localStorage.getItem(todoKeys)
-        if (!DataOfTodo) return []
-        return JSON.parse(DataOfTodo)
+        if (!DataOfTodo) return [];
+
+        try {
+            return JSON.parse(DataOfTodo) || []; // Ensures it doesn't return null
+        } catch (error) {
+            console.error("Error parsing JSON:", error);
+            return []; // Fallback to an empty array
+        }
 
     })
 
