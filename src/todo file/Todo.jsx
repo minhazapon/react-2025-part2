@@ -5,16 +5,18 @@ import { FaCheckDouble } from "react-icons/fa6";
 
 const todoKeys = "todoData"
 
-
 function Todo() {
 
     const [inputValue, setInputValue] = useState("")
+    const [date, setDate] = useState("")
+
     const [task, setTask] = useState(() => {
 
         const DataOfTodo = localStorage.getItem(todoKeys)
+        if (!DataOfTodo) return []
+        return JSON.parse(DataOfTodo)
 
     })
-    const [date, setDate] = useState("")
 
     //local storage work
     localStorage.setItem(todoKeys, JSON.stringify(task))
