@@ -1,17 +1,23 @@
 import { useEffect, useState } from "react"
 import { MdDeleteSweep } from "react-icons/md";
-import { CiEdit } from "react-icons/ci";
 import Swal from "sweetalert2";
 import { FaCheckDouble } from "react-icons/fa6";
+
+const todoKeys = "todoData"
+
 
 function Todo() {
 
     const [inputValue, setInputValue] = useState("")
-    const [task, setTask] = useState([])
+    const [task, setTask] = useState(() => {
+
+        const DataOfTodo = localStorage.getItem(todoKeys)
+
+    })
     const [date, setDate] = useState("")
 
     //local storage work
-    localStorage.setItem("todoData", JSON.stringify(task))
+    localStorage.setItem(todoKeys, JSON.stringify(task))
     //local storage work
 
     const handleInput = (value) => {
